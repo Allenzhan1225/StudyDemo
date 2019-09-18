@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778DD2331BCC500FB4503 /* AppDelegate.m */; };
+		A0D778E12331BCC500FB4503 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778E02331BCC500FB4503 /* ViewController.m */; };
+		A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E22331BCC500FB4503 /* Main.storyboard */; };
+		A0D778E62331BCCA00FB4503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E52331BCCA00FB4503 /* Assets.xcassets */; };
+		A0D778E92331BCCA00FB4503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E72331BCCA00FB4503 /* LaunchScreen.storyboard */; };
+		A0D778EC2331BCCA00FB4503 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778EB2331BCCA00FB4503 /* main.m */; };
+		A0D778F62331BCCA00FB4503 /* StydyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778F52331BCCA00FB4503 /* StydyDemoTests.m */; };
+		A0D779012331BCCA00FB4503 /* StydyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D779002331BCCA00FB4503 /* StydyDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0D778F22331BCCA00FB4503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D778D12331BCC500FB4503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D778D82331BCC500FB4503;
+			remoteInfo = StydyDemo;
+		};
+		A0D778FD2331BCCA00FB4503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0D778D12331BCC500FB4503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D778D82331BCC500FB4503;
+			remoteInfo = StydyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0D778D92331BCC500FB4503 /* StydyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StydyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D778DC2331BCC500FB4503 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0D778DD2331BCC500FB4503 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0D778DF2331BCC500FB4503 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0D778E02331BCC500FB4503 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0D778E32331BCC500FB4503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0D778E52331BCCA00FB4503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0D778E82331BCCA00FB4503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0D778EA2331BCCA00FB4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D778EB2331BCCA00FB4503 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0D778F12331BCCA00FB4503 /* StydyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StydyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D778F52331BCCA00FB4503 /* StydyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StydyDemoTests.m; sourceTree = "<group>"; };
+		A0D778F72331BCCA00FB4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D778FC2331BCCA00FB4503 /* StydyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StydyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D779002331BCCA00FB4503 /* StydyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StydyDemoUITests.m; sourceTree = "<group>"; };
+		A0D779022331BCCA00FB4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0D778D62331BCC500FB4503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778EE2331BCCA00FB4503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778F92331BCCA00FB4503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0D778D02331BCC500FB4503 = {
+			isa = PBXGroup;
+			children = (
+				A0D778DB2331BCC500FB4503 /* StydyDemo */,
+				A0D778F42331BCCA00FB4503 /* StydyDemoTests */,
+				A0D778FF2331BCCA00FB4503 /* StydyDemoUITests */,
+				A0D778DA2331BCC500FB4503 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0D778DA2331BCC500FB4503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D778D92331BCC500FB4503 /* StydyDemo.app */,
+				A0D778F12331BCCA00FB4503 /* StydyDemoTests.xctest */,
+				A0D778FC2331BCCA00FB4503 /* StydyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0D778DB2331BCC500FB4503 /* StydyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A0D778DC2331BCC500FB4503 /* AppDelegate.h */,
+				A0D778DD2331BCC500FB4503 /* AppDelegate.m */,
+				A0D778DF2331BCC500FB4503 /* ViewController.h */,
+				A0D778E02331BCC500FB4503 /* ViewController.m */,
+				A0D778E22331BCC500FB4503 /* Main.storyboard */,
+				A0D778E52331BCCA00FB4503 /* Assets.xcassets */,
+				A0D778E72331BCCA00FB4503 /* LaunchScreen.storyboard */,
+				A0D778EA2331BCCA00FB4503 /* Info.plist */,
+				A0D778EB2331BCCA00FB4503 /* main.m */,
+			);
+			path = StydyDemo;
+			sourceTree = "<group>";
+		};
+		A0D778F42331BCCA00FB4503 /* StydyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0D778F52331BCCA00FB4503 /* StydyDemoTests.m */,
+				A0D778F72331BCCA00FB4503 /* Info.plist */,
+			);
+			path = StydyDemoTests;
+			sourceTree = "<group>";
+		};
+		A0D778FF2331BCCA00FB4503 /* StydyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0D779002331BCCA00FB4503 /* StydyDemoUITests.m */,
+				A0D779022331BCCA00FB4503 /* Info.plist */,
+			);
+			path = StydyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0D778D82331BCC500FB4503 /* StydyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D779052331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemo" */;
+			buildPhases = (
+				A0D778D52331BCC500FB4503 /* Sources */,
+				A0D778D62331BCC500FB4503 /* Frameworks */,
+				A0D778D72331BCC500FB4503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StydyDemo;
+			productName = StydyDemo;
+			productReference = A0D778D92331BCC500FB4503 /* StydyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0D778F02331BCCA00FB4503 /* StydyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D779082331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemoTests" */;
+			buildPhases = (
+				A0D778ED2331BCCA00FB4503 /* Sources */,
+				A0D778EE2331BCCA00FB4503 /* Frameworks */,
+				A0D778EF2331BCCA00FB4503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D778F32331BCCA00FB4503 /* PBXTargetDependency */,
+			);
+			name = StydyDemoTests;
+			productName = StydyDemoTests;
+			productReference = A0D778F12331BCCA00FB4503 /* StydyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0D778FB2331BCCA00FB4503 /* StydyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D7790B2331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemoUITests" */;
+			buildPhases = (
+				A0D778F82331BCCA00FB4503 /* Sources */,
+				A0D778F92331BCCA00FB4503 /* Frameworks */,
+				A0D778FA2331BCCA00FB4503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D778FE2331BCCA00FB4503 /* PBXTargetDependency */,
+			);
+			name = StydyDemoUITests;
+			productName = StydyDemoUITests;
+			productReference = A0D778FC2331BCCA00FB4503 /* StydyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0D778D12331BCC500FB4503 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "占益民";
+				TargetAttributes = {
+					A0D778D82331BCC500FB4503 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					A0D778F02331BCCA00FB4503 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A0D778D82331BCC500FB4503;
+					};
+					A0D778FB2331BCCA00FB4503 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A0D778D82331BCC500FB4503;
+					};
+				};
+			};
+			buildConfigurationList = A0D778D42331BCC500FB4503 /* Build configuration list for PBXProject "StydyDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0D778D02331BCC500FB4503;
+			productRefGroup = A0D778DA2331BCC500FB4503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0D778D82331BCC500FB4503 /* StydyDemo */,
+				A0D778F02331BCCA00FB4503 /* StydyDemoTests */,
+				A0D778FB2331BCCA00FB4503 /* StydyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0D778D72331BCC500FB4503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D778E92331BCCA00FB4503 /* LaunchScreen.storyboard in Resources */,
+				A0D778E62331BCCA00FB4503 /* Assets.xcassets in Resources */,
+				A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778EF2331BCCA00FB4503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778FA2331BCCA00FB4503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0D778D52331BCC500FB4503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
+				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
+				A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778ED2331BCCA00FB4503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D778F62331BCCA00FB4503 /* StydyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D778F82331BCCA00FB4503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D779012331BCCA00FB4503 /* StydyDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0D778F32331BCCA00FB4503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0D778D82331BCC500FB4503 /* StydyDemo */;
+			targetProxy = A0D778F22331BCCA00FB4503 /* PBXContainerItemProxy */;
+		};
+		A0D778FE2331BCCA00FB4503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0D778D82331BCC500FB4503 /* StydyDemo */;
+			targetProxy = A0D778FD2331BCCA00FB4503 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0D778E22331BCC500FB4503 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0D778E32331BCC500FB4503 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0D778E72331BCCA00FB4503 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0D778E82331BCCA00FB4503 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0D779032331BCCA00FB4503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0D779042331BCCA00FB4503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0D779062331BCCA00FB4503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0D779072331BCCA00FB4503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0D779092331BCCA00FB4503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StydyDemo.app/StydyDemo";
+			};
+			name = Debug;
+		};
+		A0D7790A2331BCCA00FB4503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StydyDemo.app/StydyDemo";
+			};
+			name = Release;
+		};
+		A0D7790C2331BCCA00FB4503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StydyDemo;
+			};
+			name = Debug;
+		};
+		A0D7790D2331BCCA00FB4503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55ZH5PXLU7;
+				INFOPLIST_FILE = StydyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StydyDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0D778D42331BCC500FB4503 /* Build configuration list for PBXProject "StydyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D779032331BCCA00FB4503 /* Debug */,
+				A0D779042331BCCA00FB4503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D779052331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D779062331BCCA00FB4503 /* Debug */,
+				A0D779072331BCCA00FB4503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D779082331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D779092331BCCA00FB4503 /* Debug */,
+				A0D7790A2331BCCA00FB4503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D7790B2331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D7790C2331BCCA00FB4503 /* Debug */,
+				A0D7790D2331BCCA00FB4503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0D778D12331BCC500FB4503 /* Project object */;
+}
