@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C81C2333667300AC2ECE /* YMAudioEditTool.m */; };
+		A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008C81F23347A6000AC2ECE /* libmp3lame.a */; };
+		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
 		A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778DD2331BCC500FB4503 /* AppDelegate.m */; };
 		A0D778E12331BCC500FB4503 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778E02331BCC500FB4503 /* ViewController.m */; };
 		A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E22331BCC500FB4503 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		A0D778EC2331BCCA00FB4503 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778EB2331BCCA00FB4503 /* main.m */; };
 		A0D778F62331BCCA00FB4503 /* StydyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778F52331BCCA00FB4503 /* StydyDemoTests.m */; };
 		A0D779012331BCCA00FB4503 /* StydyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D779002331BCCA00FB4503 /* StydyDemoUITests.m */; };
+		A0D779122331BF1200FB4503 /* YMAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D779112331BF1200FB4503 /* YMAudioRecordTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A008C81B2333667300AC2ECE /* YMAudioEditTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAudioEditTool.h; sourceTree = "<group>"; };
+		A008C81C2333667300AC2ECE /* YMAudioEditTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAudioEditTool.m; sourceTree = "<group>"; };
+		A008C81E23347A5300AC2ECE /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		A008C81F23347A6000AC2ECE /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		A008C8212334983A00AC2ECE /* YMLameTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMLameTool.h; sourceTree = "<group>"; };
+		A008C8222334983A00AC2ECE /* YMLameTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMLameTool.m; sourceTree = "<group>"; };
 		A0D778D92331BCC500FB4503 /* StydyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StydyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D778DC2331BCC500FB4503 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0D778DD2331BCC500FB4503 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		A0D778FC2331BCCA00FB4503 /* StydyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StydyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D779002331BCCA00FB4503 /* StydyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StydyDemoUITests.m; sourceTree = "<group>"; };
 		A0D779022331BCCA00FB4503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D779102331BF1200FB4503 /* YMAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAudioRecordTool.h; sourceTree = "<group>"; };
+		A0D779112331BF1200FB4503 /* YMAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAudioRecordTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A087CA24233622530029D965 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
 		A0D778D02331BCC500FB4503 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 		A0D778DB2331BCC500FB4503 /* StydyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A087CA24233622530029D965 /* GPUImage */,
+				A0D7790F2331BEC800FB4503 /* Audio */,
 				A0D778DC2331BCC500FB4503 /* AppDelegate.h */,
 				A0D778DD2331BCC500FB4503 /* AppDelegate.m */,
 				A0D778DF2331BCC500FB4503 /* ViewController.h */,
@@ -130,6 +152,21 @@
 				A0D779022331BCCA00FB4503 /* Info.plist */,
 			);
 			path = StydyDemoUITests;
+			sourceTree = "<group>";
+		};
+		A0D7790F2331BEC800FB4503 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A008C81F23347A6000AC2ECE /* libmp3lame.a */,
+				A008C81E23347A5300AC2ECE /* lame.h */,
+				A0D779102331BF1200FB4503 /* YMAudioRecordTool.h */,
+				A0D779112331BF1200FB4503 /* YMAudioRecordTool.m */,
+				A008C81B2333667300AC2ECE /* YMAudioEditTool.h */,
+				A008C81C2333667300AC2ECE /* YMAudioEditTool.m */,
+				A008C8212334983A00AC2ECE /* YMLameTool.h */,
+				A008C8222334983A00AC2ECE /* YMLameTool.m */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +301,10 @@
 			files = (
 				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
 				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
+				A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */,
+				A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */,
 				A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */,
+				A0D779122331BF1200FB4503 /* YMAudioRecordTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +482,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StydyDemo/Audio",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +502,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StydyDemo/Audio",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
