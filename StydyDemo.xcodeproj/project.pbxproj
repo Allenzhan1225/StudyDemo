@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B68A47671304E4947EBBCAB /* libPods-StydyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CCD3642CB1451DAF6BB6CD /* libPods-StydyDemo.a */; };
+		9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2F42E233668CE0032E5A9 /* YMGPUImageController.m */; };
 		A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C81C2333667300AC2ECE /* YMAudioEditTool.m */; };
 		A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008C81F23347A6000AC2ECE /* libmp3lame.a */; };
 		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
@@ -39,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21279B471C5B4A6B202D0B66 /* Pods-StydyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StydyDemo.release.xcconfig"; path = "Target Support Files/Pods-StydyDemo/Pods-StydyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		36CCD3642CB1451DAF6BB6CD /* libPods-StydyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StydyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE74D9AFE2DC8ED323C3F62 /* Pods-StydyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StydyDemo.debug.xcconfig"; path = "Target Support Files/Pods-StydyDemo/Pods-StydyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC2F42D233668CE0032E5A9 /* YMGPUImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YMGPUImageController.h; path = StydyDemo/YMGPUImageController.h; sourceTree = SOURCE_ROOT; };
+		9FC2F42E233668CE0032E5A9 /* YMGPUImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YMGPUImageController.m; path = StydyDemo/YMGPUImageController.m; sourceTree = SOURCE_ROOT; };
 		A008C81B2333667300AC2ECE /* YMAudioEditTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAudioEditTool.h; sourceTree = "<group>"; };
 		A008C81C2333667300AC2ECE /* YMAudioEditTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAudioEditTool.m; sourceTree = "<group>"; };
 		A008C81E23347A5300AC2ECE /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */,
+				5B68A47671304E4947EBBCAB /* libPods-StydyDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48626C548D9371DA42178A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE74D9AFE2DC8ED323C3F62 /* Pods-StydyDemo.debug.xcconfig */,
+				21279B471C5B4A6B202D0B66 /* Pods-StydyDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A087CA24233622530029D965 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
+				9FC2F42D233668CE0032E5A9 /* YMGPUImageController.h */,
+				9FC2F42E233668CE0032E5A9 /* YMGPUImageController.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -105,6 +124,8 @@
 				A0D778F42331BCCA00FB4503 /* StydyDemoTests */,
 				A0D778FF2331BCCA00FB4503 /* StydyDemoUITests */,
 				A0D778DA2331BCC500FB4503 /* Products */,
+				48626C548D9371DA42178A87 /* Pods */,
+				B545BE7B47CD525BB17B6D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +190,14 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		B545BE7B47CD525BB17B6D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36CCD3642CB1451DAF6BB6CD /* libPods-StydyDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0D779052331BCCA00FB4503 /* Build configuration list for PBXNativeTarget "StydyDemo" */;
 			buildPhases = (
+				3DDCC1173DC551521581FFA0 /* [CP] Check Pods Manifest.lock */,
 				A0D778D52331BCC500FB4503 /* Sources */,
 				A0D778D62331BCC500FB4503 /* Frameworks */,
 				A0D778D72331BCC500FB4503 /* Resources */,
+				F8A6A07A3A181C20C8CB186A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,12 +325,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DDCC1173DC551521581FFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StydyDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A6A07A3A181C20C8CB186A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StydyDemo/Pods-StydyDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StydyDemo/Pods-StydyDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StydyDemo/Pods-StydyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0D778D52331BCC500FB4503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
+				9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */,
 				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
 				A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */,
 				A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */,
@@ -473,6 +547,7 @@
 		};
 		A0D779062331BCCA00FB4503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE74D9AFE2DC8ED323C3F62 /* Pods-StydyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +569,7 @@
 		};
 		A0D779072331BCCA00FB4503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21279B471C5B4A6B202D0B66 /* Pods-StydyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
