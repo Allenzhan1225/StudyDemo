@@ -12,6 +12,7 @@
 		A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C81C2333667300AC2ECE /* YMAudioEditTool.m */; };
 		A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008C81F23347A6000AC2ECE /* libmp3lame.a */; };
 		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
+		A087CA352338DE730029D965 /* YMCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA342338DE730029D965 /* YMCameraController.m */; };
 		A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778DD2331BCC500FB4503 /* AppDelegate.m */; };
 		A0D778E12331BCC500FB4503 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778E02331BCC500FB4503 /* ViewController.m */; };
 		A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E22331BCC500FB4503 /* Main.storyboard */; };
@@ -52,6 +53,8 @@
 		A008C81F23347A6000AC2ECE /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		A008C8212334983A00AC2ECE /* YMLameTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMLameTool.h; sourceTree = "<group>"; };
 		A008C8222334983A00AC2ECE /* YMLameTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMLameTool.m; sourceTree = "<group>"; };
+		A087CA332338DE730029D965 /* YMCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCameraController.h; sourceTree = "<group>"; };
+		A087CA342338DE730029D965 /* YMCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCameraController.m; sourceTree = "<group>"; };
 		A0D778D92331BCC500FB4503 /* StydyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StydyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D778DC2331BCC500FB4503 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0D778DD2331BCC500FB4503 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 			children = (
 				9FC2F42D233668CE0032E5A9 /* YMGPUImageController.h */,
 				9FC2F42E233668CE0032E5A9 /* YMGPUImageController.m */,
+				A087CA332338DE730029D965 /* YMCameraController.h */,
+				A087CA342338DE730029D965 /* YMCameraController.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			files = (
 				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
 				9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */,
+				A087CA352338DE730029D965 /* YMCameraController.m in Sources */,
 				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
 				A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */,
 				A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */,
@@ -553,6 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55ZH5PXLU7;
 				INFOPLIST_FILE = StydyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +568,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/StydyDemo/Audio",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo1111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -575,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55ZH5PXLU7;
 				INFOPLIST_FILE = StydyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,7 +591,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/StydyDemo/Audio",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Allen.StydyDemo1111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

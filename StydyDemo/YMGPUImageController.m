@@ -19,15 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    UIImage * inputImage = [UIImage imageNamed:@"12345"];
+    UIImage * inputImage = [UIImage imageNamed:@"origin"];
     
-    UIImageView *originImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0,100, 414, 200)];
-    originImgView.image = [UIImage imageNamed:@"12345"];
+    UIImageView *originImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0,100, 414, 400)];
+    originImgView.image = [UIImage imageNamed:@"origin"];
     [self.view addSubview:originImgView];
     
     
     //创建滤镜   //晕影，形成黑色圆形边缘，突出中间图像的效果
-    self.filter = [[GPUImageOpacityFilter alloc] init];
+    self.filter = [[GPUImageBilateralFilter alloc] init];
+//    ((GPUImageMedianFilter *)self.filter).texelWidth = .01f;
+//    ((GPUImageMedianFilter *)self.filter).texelHeight = .01f;
     //设置渲染区域
     [self.filter forceProcessingAtSize:inputImage.size];
     [self.filter useNextFrameForImageCapture];
@@ -40,7 +42,7 @@
     //获取渲染后的图片
     UIImage *newImage = [self.filter imageFromCurrentFramebuffer];
     
-    self.imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0,400, 414, 200)];
+    self.imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0,500, 414, 400)];
     self.imgView.image = newImage;
     [self.view addSubview:self.imgView];
     
