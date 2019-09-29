@@ -24,6 +24,10 @@
 //图像预览层，实时显示捕获的图像
 @property (nonatomic ,strong) AVCaptureVideoPreviewLayer *previewLayer;
 
+
+@property (nonatomic, strong) UIButton *takePictureBtn;//拍摄按钮
+@property (nonatomic, strong) UIImageView *imgView;
+
 #pragma mark — 缩放
 
 /**
@@ -42,6 +46,8 @@
 @implementation YMCameraController
 - (void)viewDidLoad {
     
+    
+  
     UIPinchGestureRecognizer *pan = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
     [self.view addGestureRecognizer:pan];
     
@@ -52,6 +58,7 @@
     self.input = [[AVCaptureDeviceInput alloc] initWithDevice:self.device error:nil];
     
     self.imageOutput = [[AVCaptureStillImageOutput alloc] init];
+    self.imageOutput.outputSettings = @{AVVideoCodecKey:AVVideoCodecJPEG};
     
     self.session = [[AVCaptureSession alloc] init];
     //  拿到的图像的大小可以自行设定
@@ -76,6 +83,12 @@
     self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
     self.previewLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    
+//    CALayer *waterMark = [CALayer layer];
+//    waterMark.contents = (id)[UIImage imageNamed:@"123"].CGImage;
+//    waterMark.frame = CGRectMake(100, 100, 100, 100);
+//    [self.previewLayer addSublayer:waterMark];
+    
     [self.view.layer addSublayer:self.previewLayer];
     
 
@@ -92,6 +105,8 @@
         }
         [_device unlockForConfiguration];
     }
+    
+     [self.view addSubview:self.takePictureBtn];
 }
 
 - (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition)position{
@@ -105,42 +120,39 @@
 
 
 
+- (void)takePicture{
+    NSLog(@"拍照");
+    AVCaptureConnection *connection = [self.imageOutput connectionWithMediaType:AVMediaTypeVideo];
+    if (connection.isVideoOrientationSupported) {
+        connection.videoOrientation = AVCaptureVideoOrientationPortrait;
+    }
+    [_imageOutput captureStillImageAsynchronouslyFromConnection:connection completionHandler:^(CMSampleBufferRef _Nullable imageDataSampleBuffer, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"error = %@",error);
+            return;
+        }
+        NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+        UIImage *image = [[UIImage alloc]initWithData:imageData];
+        
+        
+        self.imgView.image = image;
+        [self.view addSubview:self.imgView];
+
+    }];
+
+}
+
 
 
 //缩放手势 用于调整焦距
 - (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer{
-    
-    BOOL allTouchesAreOnThePreviewLayer = YES;
-    NSUInteger numTouches = [recognizer numberOfTouches], i;
-    for ( i = 0; i < numTouches; ++i ) {
-        CGPoint location = [recognizer locationOfTouch:i inView:self.view];
-        CGPoint convertedLocation = [self.previewLayer convertPoint:location fromLayer:self.previewLayer.superlayer];
-        if ( ! [self.previewLayer containsPoint:convertedLocation] ) {
-            allTouchesAreOnThePreviewLayer = NO;
-            break;
+    CGFloat factor = powf(5, recognizer.velocity/20);
+    if (self.device.activeFormat.videoMaxZoomFactor > recognizer.velocity && recognizer.velocity >= 1.0) {
+        NSError *error;
+        if ([self.device lockForConfiguration:&error]) {
+            [self.device rampToVideoZoomFactor:recognizer.velocity withRate:4.0];
+            [self.device unlockForConfiguration];
         }
-    }
-    
-    if ( allTouchesAreOnThePreviewLayer ) {
-        
-        self.effectiveScale = self.beginGestureScale * recognizer.scale;
-        if (self.effectiveScale < 1.0){
-            self.effectiveScale = 1.0;
-        }
-        
-        NSLog(@"%f-------------->%f------------recognizerScale%f",self.effectiveScale,self.beginGestureScale,recognizer.scale);
-        
-        CGFloat maxScaleAndCropFactor = [[self.imageOutput connectionWithMediaType:AVMediaTypeVideo] videoMaxScaleAndCropFactor];
-        
-        NSLog(@"%f",maxScaleAndCropFactor);
-        if (self.effectiveScale > maxScaleAndCropFactor)
-            self.effectiveScale = maxScaleAndCropFactor;
-        
-        [CATransaction begin];
-        [CATransaction setAnimationDuration:.025];
-        [self.previewLayer setAffineTransform:CGAffineTransformMakeScale(self.effectiveScale, self.effectiveScale)];
-        [CATransaction commit];
-        
     }
 }
 
@@ -157,6 +169,24 @@
     }
     
     return YES;
+}
+
+- (UIButton *)takePictureBtn{
+    if (!_takePictureBtn) {
+        _takePictureBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 100, 100, 40)];
+        _takePictureBtn.backgroundColor = [UIColor redColor];
+        [_takePictureBtn setTitle:@"拍照" forState:0];
+        
+        [_takePictureBtn addTarget:self action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _takePictureBtn;
+}
+
+-(UIImageView *)imgView{
+    if (!_imgView) {
+        _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-100, SCREEN_HEIGHT-100, 100, 100)];
+    }
+    return _imgView;
 }
 
 @end

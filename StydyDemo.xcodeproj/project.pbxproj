@@ -13,6 +13,7 @@
 		A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008C81F23347A6000AC2ECE /* libmp3lame.a */; };
 		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
 		A087CA352338DE730029D965 /* YMCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA342338DE730029D965 /* YMCameraController.m */; };
+		A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */; };
 		A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778DD2331BCC500FB4503 /* AppDelegate.m */; };
 		A0D778E12331BCC500FB4503 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778E02331BCC500FB4503 /* ViewController.m */; };
 		A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E22331BCC500FB4503 /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		A008C8222334983A00AC2ECE /* YMLameTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMLameTool.m; sourceTree = "<group>"; };
 		A087CA332338DE730029D965 /* YMCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCameraController.h; sourceTree = "<group>"; };
 		A087CA342338DE730029D965 /* YMCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCameraController.m; sourceTree = "<group>"; };
+		A087CA49233CA6670029D965 /* YMTextToAudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTextToAudioPlay.h; sourceTree = "<group>"; };
+		A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTextToAudioPlay.m; sourceTree = "<group>"; };
 		A0D778D92331BCC500FB4503 /* StydyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StydyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D778DC2331BCC500FB4503 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0D778DD2331BCC500FB4503 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,15 @@
 			path = GPUImage;
 			sourceTree = "<group>";
 		};
+		A087CA48233CA6140029D965 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A087CA49233CA6670029D965 /* YMTextToAudioPlay.h */,
+				A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A0D778D02331BCC500FB4503 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		A0D778DB2331BCC500FB4503 /* StydyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A087CA48233CA6140029D965 /* New Group */,
 				A087CA24233622530029D965 /* GPUImage */,
 				A0D7790F2331BEC800FB4503 /* Audio */,
 				A0D778DC2331BCC500FB4503 /* AppDelegate.h */,
@@ -380,6 +393,7 @@
 				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
 				9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */,
 				A087CA352338DE730029D965 /* YMCameraController.m in Sources */,
+				A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */,
 				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
 				A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */,
 				A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */,

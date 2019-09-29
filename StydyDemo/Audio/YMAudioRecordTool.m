@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *recorderFileStr;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
+
 @end
 
 @implementation YMAudioRecordTool
@@ -97,8 +98,8 @@
         [settings setValue:@(kAudioFormatLinearPCM) forKey:AVFormatIDKey];
         //设置采样率 必须保证和转码设置的相同
         [settings setValue:@(11025.0) forKey:AVSampleRateKey];
-        //通道数（必须设置为双声道, 不然转码生成的 MP3 会声音尖锐变声.）
-        [settings setValue:@(2) forKey:AVNumberOfChannelsKey];
+        //通道数
+        [settings setValue:@(1) forKey:AVNumberOfChannelsKey];
         //音频质量,采样质量(音频质量越高，文件的大小也就越大)
         [settings setValue:@(AVAudioQualityMin) forKey:AVEncoderAudioQualityKey];
 
@@ -115,8 +116,5 @@
     }
     return _audioPlayer;
 }
-
-
-
 
 @end
