@@ -45,9 +45,6 @@
     self.imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0,500, 414, 400)];
     self.imgView.image = newImage;
     [self.view addSubview:self.imgView];
-
-   
-   
 }
 
 

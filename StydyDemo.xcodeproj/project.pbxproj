@@ -14,6 +14,17 @@
 		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
 		A087CA352338DE730029D965 /* YMCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA342338DE730029D965 /* YMCameraController.m */; };
 		A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */; };
+		A0C55060234C6133000ACCAF /* YMPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5505F234C6133000ACCAF /* YMPlayerView.m */; };
+		A0C55063234C614E000ACCAF /* YMPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C55062234C614E000ACCAF /* YMPlayerController.m */; };
+		A0C55066234C626E000ACCAF /* YMOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C55065234C626E000ACCAF /* YMOverlayView.m */; };
+		A0C5506D234C8D60000ACCAF /* YMThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5506C234C8D60000ACCAF /* YMThumbnail.m */; };
+		A0C55071234CB267000ACCAF /* YMVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C55070234CB267000ACCAF /* YMVideoController.m */; };
+		A0C55075234EBE98000ACCAF /* YMPhotoAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C55074234EBE98000ACCAF /* YMPhotoAlbumController.m */; };
+		A0C5507C234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5507B234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m */; };
+		A0C55080234F01A3000ACCAF /* YMAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5507F234F01A3000ACCAF /* YMAlbumModel.m */; };
+		A0C55083234F01B2000ACCAF /* YMPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C55082234F01B2000ACCAF /* YMPhotoModel.m */; };
+		A0C5508723501626000ACCAF /* NSDate+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5508623501626000ACCAF /* NSDate+HXExtension.m */; };
+		A0C5508B235058D1000ACCAF /* YMAlbumHeaderReuseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5508A235058D1000ACCAF /* YMAlbumHeaderReuseableView.m */; };
 		A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778DD2331BCC500FB4503 /* AppDelegate.m */; };
 		A0D778E12331BCC500FB4503 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D778E02331BCC500FB4503 /* ViewController.m */; };
 		A0D778E42331BCC500FB4503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D778E22331BCC500FB4503 /* Main.storyboard */; };
@@ -58,6 +69,30 @@
 		A087CA342338DE730029D965 /* YMCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCameraController.m; sourceTree = "<group>"; };
 		A087CA49233CA6670029D965 /* YMTextToAudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTextToAudioPlay.h; sourceTree = "<group>"; };
 		A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTextToAudioPlay.m; sourceTree = "<group>"; };
+		A0C5505E234C6133000ACCAF /* YMPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPlayerView.h; sourceTree = "<group>"; };
+		A0C5505F234C6133000ACCAF /* YMPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPlayerView.m; sourceTree = "<group>"; };
+		A0C55061234C614E000ACCAF /* YMPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPlayerController.h; sourceTree = "<group>"; };
+		A0C55062234C614E000ACCAF /* YMPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPlayerController.m; sourceTree = "<group>"; };
+		A0C55064234C626E000ACCAF /* YMOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMOverlayView.h; sourceTree = "<group>"; };
+		A0C55065234C626E000ACCAF /* YMOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMOverlayView.m; sourceTree = "<group>"; };
+		A0C55067234C62B4000ACCAF /* YMTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTransport.h; sourceTree = "<group>"; };
+		A0C55069234C67C9000ACCAF /* YMTransportDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTransportDelegate.h; sourceTree = "<group>"; };
+		A0C5506B234C8D60000ACCAF /* YMThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMThumbnail.h; sourceTree = "<group>"; };
+		A0C5506C234C8D60000ACCAF /* YMThumbnail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMThumbnail.m; sourceTree = "<group>"; };
+		A0C5506F234CB267000ACCAF /* YMVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMVideoController.h; sourceTree = "<group>"; };
+		A0C55070234CB267000ACCAF /* YMVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMVideoController.m; sourceTree = "<group>"; };
+		A0C55073234EBE98000ACCAF /* YMPhotoAlbumController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPhotoAlbumController.h; sourceTree = "<group>"; };
+		A0C55074234EBE98000ACCAF /* YMPhotoAlbumController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPhotoAlbumController.m; sourceTree = "<group>"; };
+		A0C5507A234EBFE1000ACCAF /* YMAlbumCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		A0C5507B234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		A0C5507E234F01A3000ACCAF /* YMAlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAlbumModel.h; sourceTree = "<group>"; };
+		A0C5507F234F01A3000ACCAF /* YMAlbumModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAlbumModel.m; sourceTree = "<group>"; };
+		A0C55081234F01B2000ACCAF /* YMPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPhotoModel.h; sourceTree = "<group>"; };
+		A0C55082234F01B2000ACCAF /* YMPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPhotoModel.m; sourceTree = "<group>"; };
+		A0C5508523501626000ACCAF /* NSDate+HXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+HXExtension.h"; path = "../NSDate+HXExtension.h"; sourceTree = "<group>"; };
+		A0C5508623501626000ACCAF /* NSDate+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+HXExtension.m"; path = "../NSDate+HXExtension.m"; sourceTree = "<group>"; };
+		A0C55089235058D1000ACCAF /* YMAlbumHeaderReuseableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAlbumHeaderReuseableView.h; sourceTree = "<group>"; };
+		A0C5508A235058D1000ACCAF /* YMAlbumHeaderReuseableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAlbumHeaderReuseableView.m; sourceTree = "<group>"; };
 		A0D778D92331BCC500FB4503 /* StydyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StydyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D778DC2331BCC500FB4503 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0D778DD2331BCC500FB4503 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +169,124 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		A0C5505B234C60EC000ACCAF /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5506A234C8D36000ACCAF /* Model */,
+				A0C55068234C6796000ACCAF /* Protocol */,
+				A0C5505D234C6103000ACCAF /* View */,
+				A0C5505C234C60FB000ACCAF /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A0C5505C234C60FB000ACCAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C55061234C614E000ACCAF /* YMPlayerController.h */,
+				A0C55062234C614E000ACCAF /* YMPlayerController.m */,
+				A0C5506F234CB267000ACCAF /* YMVideoController.h */,
+				A0C55070234CB267000ACCAF /* YMVideoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0C5505D234C6103000ACCAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5505E234C6133000ACCAF /* YMPlayerView.h */,
+				A0C5505F234C6133000ACCAF /* YMPlayerView.m */,
+				A0C55064234C626E000ACCAF /* YMOverlayView.h */,
+				A0C55065234C626E000ACCAF /* YMOverlayView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0C55068234C6796000ACCAF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A0C55067234C62B4000ACCAF /* YMTransport.h */,
+				A0C55069234C67C9000ACCAF /* YMTransportDelegate.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A0C5506A234C8D36000ACCAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5506B234C8D60000ACCAF /* YMThumbnail.h */,
+				A0C5506C234C8D60000ACCAF /* YMThumbnail.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0C55072234DC17A000ACCAF /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5508823501632000ACCAF /* New Group */,
+				A0C55084234F0246000ACCAF /* Manager  */,
+				A0C5507D234F016D000ACCAF /* Model */,
+				A0C55077234EBFB3000ACCAF /* View */,
+				A0C55076234EBE9C000ACCAF /* Controller */,
+			);
+			path = PhotoAlbum;
+			sourceTree = "<group>";
+		};
+		A0C55076234EBE9C000ACCAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C55073234EBE98000ACCAF /* YMPhotoAlbumController.h */,
+				A0C55074234EBE98000ACCAF /* YMPhotoAlbumController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0C55077234EBFB3000ACCAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C55078234EBFB9000ACCAF /* cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0C55078234EBFB9000ACCAF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5507A234EBFE1000ACCAF /* YMAlbumCollectionViewCell.h */,
+				A0C5507B234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m */,
+				A0C55089235058D1000ACCAF /* YMAlbumHeaderReuseableView.h */,
+				A0C5508A235058D1000ACCAF /* YMAlbumHeaderReuseableView.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A0C5507D234F016D000ACCAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5507E234F01A3000ACCAF /* YMAlbumModel.h */,
+				A0C5507F234F01A3000ACCAF /* YMAlbumModel.m */,
+				A0C55081234F01B2000ACCAF /* YMPhotoModel.h */,
+				A0C55082234F01B2000ACCAF /* YMPhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0C55084234F0246000ACCAF /* Manager  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Manager ";
+			sourceTree = "<group>";
+		};
+		A0C5508823501632000ACCAF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5508523501626000ACCAF /* NSDate+HXExtension.h */,
+				A0C5508623501626000ACCAF /* NSDate+HXExtension.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A0D778D02331BCC500FB4503 = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +312,8 @@
 		A0D778DB2331BCC500FB4503 /* StydyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A087CA48233CA6140029D965 /* New Group */,
+				A0C55072234DC17A000ACCAF /* PhotoAlbum */,
+				A0C5505B234C60EC000ACCAF /* Video */,
 				A087CA24233622530029D965 /* GPUImage */,
 				A0D7790F2331BEC800FB4503 /* Audio */,
 				A0D778DC2331BCC500FB4503 /* AppDelegate.h */,
@@ -196,6 +350,7 @@
 		A0D7790F2331BEC800FB4503 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				A087CA48233CA6140029D965 /* New Group */,
 				A008C81F23347A6000AC2ECE /* libmp3lame.a */,
 				A008C81E23347A5300AC2ECE /* lame.h */,
 				A0D779102331BF1200FB4503 /* YMAudioRecordTool.h */,
@@ -391,14 +546,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D778E12331BCC500FB4503 /* ViewController.m in Sources */,
+				A0C55071234CB267000ACCAF /* YMVideoController.m in Sources */,
+				A0C55083234F01B2000ACCAF /* YMPhotoModel.m in Sources */,
+				A0C55060234C6133000ACCAF /* YMPlayerView.m in Sources */,
+				A0C55080234F01A3000ACCAF /* YMAlbumModel.m in Sources */,
 				9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */,
+				A0C5507C234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m in Sources */,
 				A087CA352338DE730029D965 /* YMCameraController.m in Sources */,
 				A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */,
 				A0D778EC2331BCCA00FB4503 /* main.m in Sources */,
 				A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */,
 				A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */,
+				A0C5508723501626000ACCAF /* NSDate+HXExtension.m in Sources */,
 				A0D778DE2331BCC500FB4503 /* AppDelegate.m in Sources */,
+				A0C55066234C626E000ACCAF /* YMOverlayView.m in Sources */,
+				A0C55075234EBE98000ACCAF /* YMPhotoAlbumController.m in Sources */,
+				A0C55063234C614E000ACCAF /* YMPlayerController.m in Sources */,
 				A0D779122331BF1200FB4503 /* YMAudioRecordTool.m in Sources */,
+				A0C5508B235058D1000ACCAF /* YMAlbumHeaderReuseableView.m in Sources */,
+				A0C5506D234C8D60000ACCAF /* YMThumbnail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

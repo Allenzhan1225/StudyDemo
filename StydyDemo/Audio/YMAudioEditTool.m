@@ -31,6 +31,16 @@ AVMutableCompositionTrack ："合成器"中的轨道，里面可以插入各种�
     AVAsset *fromAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:fromPath]];
     AVAsset *toAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:toPath]];
     
+//    NSArray * keys = @[@"availableMetadataFormats"];
+//    
+//    [toAsset loadValuesAsynchronouslyForKeys:keys completionHandler:^{
+//        NSMutableArray *mutaData = [NSMutableArray array];
+//        for (NSString *format in fromAsset.availableMetadataFormats) {
+//            [mutaData addObject:[fromAsset metadataForFormat:format]];
+//        }
+//        NSLog(@"%@",mutaData);
+//    }];
+    
     //2.获得音频轨道
     AVAssetTrack *fromAudioTrack = [[fromAsset tracksWithMediaType:AVMediaTypeAudio] firstObject];
     AVAssetTrack *toAudioTrack = [[toAsset tracksWithMediaType:AVMediaTypeAudio] firstObject];
