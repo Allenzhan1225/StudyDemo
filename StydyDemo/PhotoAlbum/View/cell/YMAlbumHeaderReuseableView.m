@@ -8,6 +8,21 @@
 
 #import "YMAlbumHeaderReuseableView.h"
 
+#ifdef __IPHONE_11_0
+@interface CustomLayer : CALayer
+@end
+#endif
+
+#ifdef __IPHONE_11_0
+@implementation CustomLayer
+- (CGFloat) zPosition {
+    return 0;
+}
+@end
+#endif
+
+
+
 @interface YMAlbumHeaderReuseableView ()
 
 @property (nonatomic, strong) UILabel *dateLb;
@@ -44,4 +59,10 @@
     }
     return _dateLb;
 }
+
+#ifdef __IPHONE_11_0
++ (Class)layerClass {
+    return [CustomLayer class];
+}
+#endif
 @end

@@ -25,20 +25,20 @@
 
 - (void)setAsset:(PHAsset *)asset{
     _asset = asset;
-    CGFloat imageWidth = (kScreenWidth - 20.f) / 5.5;
-    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    // 同步获得图片, 只会返回1张图片
-    options.synchronous = NO;
-//    options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
-//    options.resizeMode = PHImageRequestOptionsResizeModeFast;
+//    CGFloat imageWidth = (kScreenWidth - 20.f) / 5.5;
+//    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+//    // 同步获得图片, 只会返回1张图片
+//    options.synchronous = NO;
+////    options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
+////    options.resizeMode = PHImageRequestOptionsResizeModeFast;
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(imageWidth * [UIScreen mainScreen].scale, imageWidth * [UIScreen mainScreen].scale)  contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                self.photoImageView.image = result;
-            });
-        }];
+//        [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(imageWidth * [UIScreen mainScreen].scale, imageWidth * [UIScreen mainScreen].scale)  contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.photoImageView.image = result;
+//            });
+//        }];
 //    });
-   
+
 
 }
 
@@ -47,20 +47,45 @@
 //    self.photoImageView.image = img;
 //}
 
+- (void)setThumbnailImage:(UIImage *)thumbnailImage{
+    _thumbnailImage = thumbnailImage;
+    self.photoImageView.image = thumbnailImage;
+}
+
+- (void)setModel:(YMPhotoModel *)model{
+    _model = model;
+}
+
 #pragma mark - 加载图片
 -(void)loadImage:(NSIndexPath *)indexPath {
     NSLog(@"%@",self.asset.localIdentifier);
-    CGFloat imageWidth = (kScreenWidth - 20.f) / 5.5;
+    CGFloat imageWidth = (kScreenWidth - 25.f) / 5.5;
     self.photoImageView.image = nil;
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     // 同步获得图片, 只会返回1张图片
     options.synchronous = NO;
     
-    [[PHCachingImageManager defaultManager] requestImageForAsset:self.asset targetSize:CGSizeMake(imageWidth * [UIScreen mainScreen].scale, imageWidth * [UIScreen mainScreen].scale) contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        if (self.row == indexPath.row) {
-            self.photoImageView.image = result;
-        }
-    }];
+    if (self.model.thumbnailImage) {
+        self.photoImageView.image = self.model.thumbnailImage;
+    }else{
+
+        [[PHCachingImageManager defaultManager] requestImageForAsset:self.asset targetSize:CGSizeMake(imageWidth * [UIScreen mainScreen].scale, imageWidth * [UIScreen mainScreen].scale) contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            if (self.row == indexPath.row) {
+                self.photoImageView.image = result;
+                self.model.thumbnailImage = result;
+            }
+        }];
+    }
+    
+    
+    
+//    [[PHCachingImageManager defaultManager] requestImageDataForAsset:self.asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+//        if (self.row == indexPath.row) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.photoImageView.image = [UIImage imageWithData:imageData];
+//            });
+//        }
+//    }];
 }
 
 #pragma mark - Get方法 

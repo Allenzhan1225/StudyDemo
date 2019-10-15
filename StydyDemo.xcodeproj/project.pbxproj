@@ -12,6 +12,7 @@
 		A008C81D2333667300AC2ECE /* YMAudioEditTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C81C2333667300AC2ECE /* YMAudioEditTool.m */; };
 		A008C82023347A6000AC2ECE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008C81F23347A6000AC2ECE /* libmp3lame.a */; };
 		A008C8232334983A00AC2ECE /* YMLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A008C8222334983A00AC2ECE /* YMLameTool.m */; };
+		A08340EB2355571400F378AF /* YMPhotoViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A08340EA2355571400F378AF /* YMPhotoViewFlowLayout.m */; };
 		A087CA352338DE730029D965 /* YMCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA342338DE730029D965 /* YMCameraController.m */; };
 		A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A087CA4A233CA6670029D965 /* YMTextToAudioPlay.m */; };
 		A0C55060234C6133000ACCAF /* YMPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C5505F234C6133000ACCAF /* YMPlayerView.m */; };
@@ -65,6 +66,8 @@
 		A008C81F23347A6000AC2ECE /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		A008C8212334983A00AC2ECE /* YMLameTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMLameTool.h; sourceTree = "<group>"; };
 		A008C8222334983A00AC2ECE /* YMLameTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMLameTool.m; sourceTree = "<group>"; };
+		A08340E92355571400F378AF /* YMPhotoViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPhotoViewFlowLayout.h; sourceTree = "<group>"; };
+		A08340EA2355571400F378AF /* YMPhotoViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPhotoViewFlowLayout.m; sourceTree = "<group>"; };
 		A087CA332338DE730029D965 /* YMCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCameraController.h; sourceTree = "<group>"; };
 		A087CA342338DE730029D965 /* YMCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCameraController.m; sourceTree = "<group>"; };
 		A087CA49233CA6670029D965 /* YMTextToAudioPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTextToAudioPlay.h; sourceTree = "<group>"; };
@@ -149,6 +152,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A08340E82355566B00F378AF /* Layerout */ = {
+			isa = PBXGroup;
+			children = (
+				A08340E92355571400F378AF /* YMPhotoViewFlowLayout.h */,
+				A08340EA2355571400F378AF /* YMPhotoViewFlowLayout.m */,
+			);
+			path = Layerout;
+			sourceTree = "<group>";
+		};
 		A087CA24233622530029D965 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +235,8 @@
 		A0C55072234DC17A000ACCAF /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				A0C5508823501632000ACCAF /* New Group */,
+				A08340E82355566B00F378AF /* Layerout */,
+				A0C5508823501632000ACCAF /* Category */,
 				A0C55084234F0246000ACCAF /* Manager  */,
 				A0C5507D234F016D000ACCAF /* Model */,
 				A0C55077234EBFB3000ACCAF /* View */,
@@ -278,13 +291,13 @@
 			path = "Manager ";
 			sourceTree = "<group>";
 		};
-		A0C5508823501632000ACCAF /* New Group */ = {
+		A0C5508823501632000ACCAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				A0C5508523501626000ACCAF /* NSDate+HXExtension.h */,
 				A0C5508623501626000ACCAF /* NSDate+HXExtension.m */,
 			);
-			path = "New Group";
+			path = Category;
 			sourceTree = "<group>";
 		};
 		A0D778D02331BCC500FB4503 = {
@@ -551,6 +564,7 @@
 				A0C55060234C6133000ACCAF /* YMPlayerView.m in Sources */,
 				A0C55080234F01A3000ACCAF /* YMAlbumModel.m in Sources */,
 				9FC2F42F233668CE0032E5A9 /* YMGPUImageController.m in Sources */,
+				A08340EB2355571400F378AF /* YMPhotoViewFlowLayout.m in Sources */,
 				A0C5507C234EBFE1000ACCAF /* YMAlbumCollectionViewCell.m in Sources */,
 				A087CA352338DE730029D965 /* YMCameraController.m in Sources */,
 				A087CA4B233CA6680029D965 /* YMTextToAudioPlay.m in Sources */,

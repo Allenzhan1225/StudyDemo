@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 高清图
 @property (nonatomic, strong) UIImage *highDefinitionImage;
 
+///缩略图
+@property (nonatomic, strong) UIImage *thumbnailImage;
+
 /**  位置信息 - 如果当前天数内包含带有位置信息的资源则有值 */
 @property (strong, nonatomic) CLLocation * _Nullable location;
 

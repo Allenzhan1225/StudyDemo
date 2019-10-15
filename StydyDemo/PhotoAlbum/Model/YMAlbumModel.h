@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger sectionCount;
 @property (nonatomic, assign) NSInteger rowCount;
+
+
+- (void)loadDataFromAsset:(PHFetchResult<PHAsset *> *)assets;
 @end
 
 NS_ASSUME_NONNULL_END

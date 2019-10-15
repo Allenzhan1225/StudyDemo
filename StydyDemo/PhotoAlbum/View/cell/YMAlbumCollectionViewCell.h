@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
+#import "YMPhotoModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YMAlbumCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) UIImage *img;
 @property (nonatomic, strong) PHAsset *asset;
+@property (nonatomic, strong) UIImage *thumbnailImage;
+@property (nonatomic, strong) YMPhotoModel *model;
 /// 行数
 @property (nonatomic, assign) NSInteger row;
 #pragma mark - 加载图片

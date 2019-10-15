@@ -8,26 +8,33 @@
 
 #import "YMPhotoModel.h"
 #import "NSDate+HXExtension.h"
+#import <UIKit/UIKit.h>
 @implementation YMPhotoModel
 
 -(void)setAsset:(PHAsset *)asset {
     _asset = asset;
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-        // 同步获得图片, 只会返回1张图片
-        options.synchronous = YES;
-        options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
-        options.resizeMode = PHImageRequestOptionsResizeModeFast;
-        
-        /// 当选择后获取原图
-        [[PHCachingImageManager defaultManager] requestImageForAsset:self.asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            self.highDefinitionImage = result;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-            });
-        }];
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+//        // 同步获得图片, 只会返回1张图片
+//        options.synchronous = NO;
+//        options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
+//        options.resizeMode = PHImageRequestOptionsResizeModeFast;
+//
+//        /// 当选择后获取原图
+//        [[PHCachingImageManager defaultManager] requestImageForAsset:self.asset targetSize:CGSizeMake(100*2, 100*2) contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+//            self.thumbnailImage = result;
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//
+//            });
+//        }];
+//
+////            [[PHCachingImageManager defaultManager] requestImageDataForAsset:self.asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+////                    dispatch_async(dispatch_get_main_queue(), ^{
+////                        self.thumbnailImage = [UIImage imageWithData:imageData];
+////                    });
+////            }];
+//    });
 }
 
 @end
