@@ -91,7 +91,7 @@
 #pragma mark - Get方法 
 -(UIImageView *)photoImageView {
     if (!_photoImageView) {
-        _photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (kScreenWidth - 20.f) / 3.f, (kScreenWidth - 20.f) / 3.f)];
+        _photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (kScreenWidth - 25.f) / 4.f, (kScreenWidth - 25.f) / 4.f)];
         _photoImageView.contentMode = UIViewContentModeScaleAspectFill;
         _photoImageView.layer.masksToBounds = YES;
         _photoImageView.backgroundColor = [UIColor redColor];
